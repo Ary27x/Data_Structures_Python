@@ -1,7 +1,6 @@
 import os
 import copy
 os.system("cls")
-os.system("cls")
 
 
 class Node:
@@ -112,9 +111,7 @@ class List:
         current_node = self.head
         if current_node == None:
             print("The list is empty")
-
             return
-
         print("<Head>", end=' ')
         while True:
             print(current_node.data, end=' ')
@@ -124,54 +121,6 @@ class List:
             current_node = current_node.next
             print("->", end=' ')
         return
-
-
-def min_returner(list_obj):
-    temp_list_obj = list_obj
-    list_obj = list_obj.head
-    if list_obj == None:
-        return None, None
-    min_data = int(list_obj.data)
-    i = 1
-    while True:
-        temp = int(list_obj.data)
-        if temp <= int(min_data):
-            min_pos = i
-            min_data = int(temp)
-        i += 1
-        if list_obj.next == None:
-            break
-        else:
-            list_obj = list_obj.next
-    return min_data, min_pos
-
-
-def mergeList(fl, sl):
-    firstList = copy.deepcopy(fl)
-    secondList = copy.deepcopy(sl)
-
-    mergedList = List()
-    while True:
-        list_one_min, fpos = min_returner(firstList)
-        list_two_min, spos = min_returner(secondList)
-        if (list_one_min == None and list_two_min == None):
-            break
-        if (list_one_min == None and list_two_min != None):
-            mergedList.add(Node(list_two_min))
-            secondList.delete_node(spos)
-        elif (list_one_min != None and list_two_min == None):
-            mergedList.add(Node(list_one_min))
-            firstList.delete_node(fpos)
-        elif (list_one_min < list_two_min):
-            mergedList.add(Node(list_one_min))
-            firstList.delete_node(fpos)
-        else:
-            mergedList.add(Node(list_two_min))
-            secondList.delete_node(spos)
-    return mergedList
-
-
-mainList = List()
 
 
 class Controller:
@@ -212,12 +161,10 @@ class Controller:
             print("Error: The list is empty")
             input("Press enter to continue")
             return
-
         if (pos < 1 or pos > list_length):
             print("Error: List Index Out Of Range: ({})".format(pos))
             input("Press Enter To Continue")
             return
-
         mainList.getData(pos)
 
     def cd(self, data, pos):
@@ -225,18 +172,17 @@ class Controller:
             print("Error: The list is empty")
             input("Press enter to continue")
             return
-
         if (pos < 1 or pos > list_length):
             print("Error: List Index Out Of Range: ({})".format(pos))
             input("Press Enter To Continue")
             return
-
         mainList.changeData(data, pos)
 
     def dh(self):
         mainList.delete_header()
 
 
+mainList = List()
 nc = Controller()
 
 
@@ -246,7 +192,7 @@ def main_controller():
     print()
     print("List Length: {}".format(list_length))
     print()
-    print("1) Add Element")
+    print("1) Add Element (Tail Position)")
     print("2) Add Element (Positioned)")
     print("3) Add Header")
     print("4) Delete Header")
