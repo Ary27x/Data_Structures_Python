@@ -170,6 +170,7 @@ def mergeList(fl, sl):
     return mergedList
 
 
+# Some Dummy Data
 list1 = List()
 obj01 = Node(1)
 obj02 = Node(3)
@@ -187,6 +188,7 @@ list2.add(obj12)
 list2.add(obj13)
 list2.add(obj14)
 
+# Create A Merged List For The Dummy Data
 list_merged = mergeList(list1, list2)
 
 
