@@ -123,6 +123,7 @@ class List:
                 break
             current_node = current_node.next
             print("->", end=' ')
+        print ()
         return
 
 
@@ -209,9 +210,10 @@ print()
 
 
 def continue_f():
-    print("1) add to list 1 ")
-    print("2) add to list 2 ")
-    choice = input()
+    print("1) Add To List 1 ")
+    print("2) Add To List 2 ")
+    print ()
+    choice = input('Enter Controls: ')
     if choice == "1":
         data = input("Enter The Number: ")
         list1.add(Node(int(data)))
