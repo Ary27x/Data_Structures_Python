@@ -2,7 +2,7 @@
 
 Creating ADT Data Strcutures In Python
 
-***singlyLinkedList.py :
+***singlyLinkedList.py*** :
 
 This program creates a singly linked list and also has a menu to modify that list with seven options:
 
@@ -16,11 +16,11 @@ This program creates a singly linked list and also has a menu to modify that lis
 
 With every option chosen, the list gets updated and diplays its content, along with its current length.
 
-***list_merger.py :
+***list_merger.py*** :
 
 This program creates two dummy unordered linked lists and then merges them to create a ordered merged linked list while taking new inputs from the menu into the dummy list one or two and continuously updating both the unordered lists and the ordered merged list.
 
-***doublyLinkedList.py :
+***doublyLinkedList.py*** :
 
 This program creates a doubly linked list with the following options:
 
