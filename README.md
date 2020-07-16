@@ -30,3 +30,15 @@ This program creates a doubly linked list with the following options:
 
 With every option chosen, the list gets updated and diplays its content, along with its current length.
 If option three is choosen, we can traverse throughtout the doubly linked list, both to its left or right.
+
+***stackArrayImplementation.py*** :
+
+This program creates an array implemented stack by taking the stack capacity/size as an input and displaying the current stack along with the following options to modify the stack:
+
+1) Push Data
+2) Pop Data
+3) Stack Current Size
+4) Stack Top Value
+5) Stack Base Value
+6) Stack Memory Information
+ 
