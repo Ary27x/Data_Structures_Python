@@ -201,7 +201,7 @@ def main_controller():
     print("7) Change Data (Positioned)")
 
     print()
-    choice = input()
+    choice = input('Enter Controls: ')
     if choice == "1":
         data = input("Enter Data: ")
         nc.atl(data)
