@@ -32,10 +32,8 @@ class List():
         pos = int(pos)
         if (pos > list_length or pos < 1):
             print("Index Out Of Range")
-            input('press enter to continue')
             return
         i = 1
-        print('hi')
         current_node = self.head
         while (i != pos):
             i += 1
@@ -130,7 +128,7 @@ def home():
     if choice == "2":
         data_input = input("Enter The Position: ")
         x = nc.gd(data_input)
-        print("Data Retrieved {}".format(x))
+        print("Data Retrieved: {}".format(x))
         input("Press Enter to continue")
     if choice == "3":
         nc.traverse()
