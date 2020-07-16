@@ -41,4 +41,13 @@ This program creates an array implemented stack by taking the stack capacity/siz
 4) Stack Top Value
 5) Stack Base Value
 6) Stack Memory Information
- 
+
+***queueLinkedListImplementation.py*** : 
+
+This program creates a linked list implemented queue by taking new data as input while displaying the current queue.
+The queue can be modified by the following function:
+
+1) EnQue 
+2) DeQue
+
+*EnQue* means adding new data to the queue, while *Deque* means removing data from the queue accordingly.
