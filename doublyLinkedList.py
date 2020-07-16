@@ -121,7 +121,8 @@ def home():
     print("1) Add Element (Tail Position)")
     print("2) Get Data")
     print("3) Left Right Traverse Through List")
-    choice = input()
+    print()
+    choice = input('Enter Controls: ')
     if choice == "1":
         data_input = input("Enter Data To List: ")
         nc.add(data_input)
