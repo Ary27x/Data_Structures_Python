@@ -123,15 +123,6 @@ def home():
             print('Error: Stack Is Empty')
         print()
         input('Press Enter To Continue')
-    if choice == '5':
-        print()
-        returned = myStack.baseValue()
-        if returned:
-            print('Base Value Of Stack: {}'.format(returned))
-        else:
-            print('Error: Stack Is Empty')
-        print()
-        input('Press Enter To Continue')
     if choice == '6':
         myStack.info()
     home()
